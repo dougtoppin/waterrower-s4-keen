@@ -1,5 +1,7 @@
 # waterrower-s4-keen
-##Read rowing data from a WaterRower Series 4 (IV) - S4 - Performance Monitor and save to a Keen.IO collection.
+Read rowing data from a WaterRower Series 4 (IV) - S4 - Performance Monitor and save to a Keen.IO collection.
+The Keen collection session name will be the timestamp of when the script was started.
+If the stroke value == 0 then no data will be sent to Keen.
 
 ### To use this:
 * plugin USB cable to your S4

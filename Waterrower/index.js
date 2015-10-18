@@ -23,6 +23,9 @@ var client = new Keen({
     writeKey: "KEENWRITEKEY"
 });
 
+// uniquely identify this session for the keen data collection
+var session = "session-" + new Date().toISOString();
+
 var readWaterrower = function () {
 
     // read data from the S4 for each field
@@ -54,7 +57,7 @@ var readWaterrower = function () {
     };
 
     if (strokeCount > 0) {
-        client.addEvent("session", event, function (err, res) {
+        client.addEvent(session, event, function (err, res) {
             if (err) {
                 console.log("error Keen:", err);
             }
@@ -69,6 +72,8 @@ var readWaterrower = function () {
 
 }
 
+// note the keen collection session name for this run
+console.log("session:", session);
 
 setInterval(readWaterrower, collectionInterval);
 
