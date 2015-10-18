@@ -1,0 +1,26 @@
+{
+  "name": "waterrower-s4-keen",
+  "version": "1.0.0",
+  "description": "Read data from a WaterRower S4 performance monitor and send to a Keen.IO collection",
+  "main": "Waterrower",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dougtoppin/waterrower-s4-keen.git"
+  },
+  "keywords": [
+    "waterrower",
+    "nodejs",
+    "node",
+    "keen.io",
+    "s4"
+  ],
+  "author": "Doug Toppin <dougtoppin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dougtoppin/waterrower-s4-keen/issues"
+  },
+  "homepage": "https://github.com/dougtoppin/waterrower-s4-keen#readme"
+}
