@@ -2,10 +2,7 @@
 // and save to a Keen.IO collection.
 
 // To use this:
-// - plug in a USB cable to your S4
-// - create a Keen.IO collection and get the the project ID and write keys
-// - replace KEENPROJECTID and KEENWRITEKEY (below) with your values
-// - npm install
+// Refer to: https://github.com/dougtoppin/waterrower-s4-keen/blob/master/README.md
 
 // S4 information can be found at http://www.waterrower.com/products_s4.php
 // Keen.IO information can be found at https://keen.io/
