@@ -3,6 +3,25 @@ Read rowing data from a WaterRower Series 4 (IV) - S4 - Performance Monitor and 
 The Keen collection session name will be the timestamp of when the script was started.
 If the stroke value == 0 then no data will be sent to Keen.
 
+While the script is running it will output to stdout the latest data read from the S4.
+When it first starts it should look something like this before you start rowing:
+
+    Stroke Count.....0
+    Total Speed .....0
+    Average Speed ...0
+    Distance... .....0
+    Heart Rate ......0
+    no strokes detected, not sending data
+
+Once you start rowing the data should start updating:
+    
+    Stroke Count.....100
+    Total Speed .....35
+    Average Speed ...0
+    Distance... .....69
+    Heart Rate ......0
+
+
 ### To use this:
 * plugin USB cable to your S4
 * create a Keen.IO collection and get the the project ID and write keys

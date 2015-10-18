@@ -37,7 +37,7 @@ var readWaterrower = function () {
 
     // output it to stdout
     console.log();                                   // newline between output intervals for visibility
-    console.log("Stroke Rate ....." + strokeCount);  // [ - ]
+    console.log("Stroke Count....." + strokeCount);  // [ - ]
     console.log("Total Speed ....." + totalSpeed);   // [cm/s]
     console.log("Average Speed ..." + averageSpeed); // [cm/s]
     console.log("Distance... ....." + distance);     // [ m ]
@@ -46,7 +46,7 @@ var readWaterrower = function () {
     // Create a data object with the properties you want to send to Keen
     var event = {
         item: "event",
-        strokeRate: strokeCount,
+        strokeCount: strokeCount,
         totalSpeed: totalSpeed,
         averageSpeed: averageSpeed,
         distance: distance,
