@@ -18,9 +18,10 @@ var collectionInterval = 5000;
 var Keen = require('keen-js');
 
 
+// default the keen settings, later we will see if they are in the environment
 var client = new Keen({
-    projectId: "KEENPROJECTID",
-    writeKey: "KEENWRITEKEY"
+    projectId: "",
+    writeKey: ""
 });
 
 // uniquely identify this session for the keen data collection
@@ -76,6 +77,10 @@ var readWaterrower = function () {
     }
 
 }
+
+// check the environment for our Keen info
+client.projectId=process.env.KEENPROJECTID || 'KEENPROJECTID';
+client.writeKey= process.env.KEENWRITEKEY || 'KEENWRITEKEY';
 
 // note the keen collection session name for this run
 console.log("session:", session);
