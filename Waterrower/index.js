@@ -12,7 +12,7 @@
 
 // This code was started with the example from https://github.com/jamesnesfield/node-waterrower
 
-var waterrower = require("./Waterrower");
+var waterrower = require("../node-waterrower/Waterrower");
 
 // milliseconds between data collection intervals
 var collectionInterval = 5000;

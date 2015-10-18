@@ -1,10 +1,14 @@
 # waterrower-s4-keen
-#Read rowing data from a WaterRower Series 4 (IV) - S4 - Performance Monitor and save to a Keen.IO collection.
+##Read rowing data from a WaterRower Series 4 (IV) - S4 - Performance Monitor and save to a Keen.IO collection.
 
 ### To use this:
 * plugin USB cable to your S4
 * create a Keen.IO collection and get the the project ID and write keys
-* install, configure and run
+* git clone https://github.com/dougtoppin/waterrower-s4-keen.git
+* git clone https://github.com/jamesnesfield/node-waterrower.git
+* npm install serialport
+* npm install keen-js
+* node Waterrower/index.js
 
 ### Environment
 This was written and tested using in the following environment
