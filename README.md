@@ -21,6 +21,21 @@ Once you start rowing the data should start updating:
     Distance... .....69
     Heart Rate ......0
 
+The event data sent to the Keen collection will look something like this:
+
+    {
+    "distance": 74,
+    "heartRate": 0,
+    "item": "event",
+    "strokeCount": 122,
+    "keen": {
+        "timestamp": "2015-10-18T17:50:50.171Z",
+        "created_at": "2015-10-18T17:50:50.307Z",
+        "id": "5623dbfa6f31a22fff42b561"
+    },
+    "totalSpeed": 0,
+    "averageSpeed": 0
+    }   
 
 ### To use this:
 * plugin USB cable to your S4
