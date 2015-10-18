@@ -40,6 +40,9 @@ The event data sent to the Keen collection will look something like this:
 ### To use this:
 * plugin USB cable to your S4
 * create a Keen.IO collection and get the the project ID and write keys
+* put your keys into env vars (or edit the script)
+  * export KEENPROJECTID=xxxxx
+  * export KEENWRITEKEY=yyyyy
 * git clone https://github.com/dougtoppin/waterrower-s4-keen.git
 * cd node-waterrower
 * git clone https://github.com/jamesnesfield/node-waterrower.git
