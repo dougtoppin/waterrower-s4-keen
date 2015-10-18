@@ -56,7 +56,7 @@ var readWaterrower = function () {
         }
     };
 
-    if (waterrower.readStrokeCount() > 0) {
+    if (strokeCount > 0) {
         client.addEvent("session", event, function (err, res) {
             if (err) {
                 console.log("error Keen:", err);
