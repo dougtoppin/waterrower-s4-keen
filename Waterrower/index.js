@@ -26,6 +26,9 @@ var client = new Keen({
 // uniquely identify this session for the keen data collection
 var session = "session-" + new Date().toISOString();
 
+// only send to Keen if the stroke count has increased
+var previousStrokeCount=0;
+
 var readWaterrower = function () {
 
     // read data from the S4 for each field
@@ -56,7 +59,9 @@ var readWaterrower = function () {
         }
     };
 
-    if (strokeCount > 0) {
+    // only record the data if it looks like we are actually rowing
+    if (strokeCount > previousStrokeCount) {
+        previousStrokeCount = strokeCount;
         client.addEvent(session, event, function (err, res) {
             if (err) {
                 console.log("error Keen:", err);
@@ -67,7 +72,7 @@ var readWaterrower = function () {
             }
         });
     } else {
-        console.log("no strokes detected, not sending data");
+        console.log("no new strokes detected, not sending data");
     }
 
 }
